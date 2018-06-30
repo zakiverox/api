@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
               $table->integer('hjual');
               $table->string('detail');
               $table->integer('stok');
+              $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });
     }
